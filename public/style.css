@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: rgb(33, 153, 209);
+  text-align: center;
+}
+
+.title {
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 40px;
+  margin: 5%;
+}
+
+.todoOuter {
+  border-radius: 10px;
+  background-color: rgb(236, 190, 37);
+  margin: 15% auto;
+  width: 400px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.todoOuter h1 {
+  margin: 20px auto 10px auto;
+
+  color: white;
+  background-color: rgb(131, 176, 228);
+}
+
+.todoContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+
+  width: 90%;
+  margin: 0px auto auto auto;
+}
+
+.newTodo {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(131, 176, 228);
+  width: 90%;
+  margin: 5px auto;
+}
+
+.newTodo input {
+  margin: auto 5%;
+}
+
+.newTodo input[type="checkbox"]:checked + p {
+  text-decoration-color: black;
+  text-decoration: line-through;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 4px;
+}
+
+.newTodo p {
+  font-size: 20px;
+  transition: all 0.5s ease;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto 10px auto;
+}
+
+form input {
+  font-size: 20px;
+  border: none;
+}
+
+form input:focus {
+  outline: none;
+}
+
+form button {
+  font-size: 20px;
+  height: 23px;
+  width: 23px;
+  border: none;
+  background-color: white;
+  color: orange;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: orange;
+  color: white;
+}
