@@ -4,7 +4,7 @@ const mongoose = require("mongoose")
 
 const app = express()
 
-const todoList = ["Hello"];
+const todoList = ["Hello", "Add some text at the bottom", "Press +", "Press the checkbox to strike through"];
 
 app.use(bodyParser.urlencoded({ extended: true }))
 
